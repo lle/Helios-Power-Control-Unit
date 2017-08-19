@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=vD_NKFLX1eg
 ## Problem Statement
 At Helios Makerspace, there is a number of dangerous tools (ei: CNC, table saws, metal lathe). Members should always the staff if they can use the machine. 
 
-## Raison d'être of the PCU
+## Creating the PCU
 The power control unit locks the power from a tool until the correct password has been inputted. Furthermore, the administrator can set timeouts amount between 15 minutes and 2 hours. When the timeout has been reached, the PCU will produce several waves of warning beep at 60, 30 and 10 seconds, before shutting down.
 
 ## Limitations
@@ -20,10 +20,14 @@ If you wanted to have a PCB that supports 15A, you would need to manufacture a P
 * Beware: if you manufacture a PCB for 15A, change the fuse+fuse clip. They are only rated for 10A 
 
 ## Known Issues
-On boot-up the Arduino will turn on pin D13 and consequently turn on the relay. This is caused by the Arduino bootloader. We have to make this project as portable as possible, so instead of touching the bootloader and asking everybody to reflash their arduino, I'm just going to issue a new PCB design which uses pin D12.
+### Relay flicker on boot-up
+On boot-up the Arduino will turn on pin D13 and consequently turn on the relay for a breif moment. That is un-safe for the purpose of this device. This is caused by the Arduino bootloader which raises the LED pin HIGH during boot. We have to make this project as portable as possible, so instead of touching the bootloader and asking everybody to reflash their arduino, I'm just going to issue a new PCB design which uses pin D12 for the relay.
 
-## Future Fixes 
-Could bypass the relay into pin D12 instead of D13.
+### Hardware Patch
+To fix this problem on the first manufactured PCB, we can bypass the relay into pin D12 instead of D13.
+* First cut the D13 pin off the Arduino Nano
+* Then, on the bottom of the PCB, solder a bypass wire to connect D13 to D12
+![Relay Flicker Patch](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/patch.png)
 
 ## BOM
 | Digikey               |                       |                                                                             |                    |                |           |
