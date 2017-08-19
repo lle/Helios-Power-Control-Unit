@@ -10,7 +10,8 @@ Eeprom: Christopher Andrews 2015 (arduino.cc/en/Reference/EEPROM)
 
 //define pin
 #define BUZZER_PIN 11
-#define RELAY_PIN 13
+#define RELAY_PIN_TYPE1 13
+#define RELAY_PIN_TYPE2 12
 #define LED_RED_PIN 10
 #define LED_GREEN_PIN 9
 
@@ -91,7 +92,8 @@ void buzzer_setState(uint8_t buzzer_newState)
 
 void relay_setState(uint8_t relay_newState)
 {
-  digitalWrite(RELAY_PIN, relay_newState);
+  digitalWrite(RELAY_PIN_TYPE1, relay_newState);
+  digitalWrite(RELAY_PIN_TYPE2, relay_newState);
 }
 
 bool password_addInput(char user_input)
@@ -318,7 +320,8 @@ void setup()
   pinMode(LED_GREEN_PIN, OUTPUT); //LED 2
   pinMode(LED_RED_PIN, OUTPUT);   //LED 1
   pinMode(BUZZER_PIN, OUTPUT);    //Buzzer
-  pinMode(RELAY_PIN, OUTPUT);     //Relay
+  pinMode(RELAY_PIN_TYPE1, OUTPUT);     //Relay
+  pinMode(RELAY_PIN_TYPE2, OUTPUT);     //Relay
 
   digitalWrite(LED_RED_PIN, HIGH);      
   digitalWrite(LED_GREEN_PIN, HIGH);
