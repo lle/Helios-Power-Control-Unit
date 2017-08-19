@@ -51,8 +51,8 @@ Could bypass the relay into pin D12 instead of D13.
 | 1                     | 3314J-2-103ECT-ND     | TRIMMER 10K OHM 0.25W SMD                                                   |                    | 3.12           | 3.12      |
 |                       |                       |                                                                             |                    |                |           |
 | Addison   Electronics |                       |                                                                             |                    |                |           |
-| Quantity              | Part Number           | Description                                                                 | Customer Reference | Unit Price CAD | Sub Total |
-| 1                     | Project Box           | https://addison-electronique.com/boitier-abs-257-x-190-x-82-mm.html         | 13.99              | 13.99          |           |
-| 1                     | Extension Cord        | https://addison-electronique.com/rallonge-electrique-16-3-sjtw-1-metre.html | 2.99               | 2.99           |           |
+| Quantity              | Description           | URL                                                                         | Customer Reference | Unit Price CAD | Sub Total |
+| 1                     | Project Box           | https://addison-electronique.com/boitier-abs-257-x-190-x-82-mm.html         |                    | 13.99          | 13.99     |
+| 1                     | Extension Cord        | https://addison-electronique.com/rallonge-electrique-16-3-sjtw-1-metre.html |                    | 2.99           | 2.99      |
 |                       |                       |                                                                             |                    |                |           |
 |                       |                       |                                                                             |                    | Total          | 55.18     |
