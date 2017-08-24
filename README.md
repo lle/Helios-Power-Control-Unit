@@ -58,6 +58,11 @@ To fix this problem on the first manufactured PCB, we can bypass the relay into 
 | Quantity              | Description           | URL                                                                         | Customer Reference | Unit Price CAD | Sub Total |
 | 1                     | Project Box           | https://addison-electronique.com/boitier-abs-257-x-190-x-82-mm.html         |                    | 13.99          | 13.99     |
 | 1                     | Extension Cord        | https://addison-electronique.com/rallonge-electrique-16-3-sjtw-1-metre.html |                    | 2.99           | 2.99      |
+| 1                     | Switch                | https://addison-electronique.com/interrupteur-a-levier-on-off-7807.html     |                    | 1.99           | 1.99      |
+| 1                     | Switch Cover          | https://addison-electronique.com/couvert-pour-interrupteur-a-levier-vert-clair.html |            | 0.99           | 0.99      |
+|                       |                       |                                                                             |                    |                |           |
+| 1                     | LCD                   | http://bit.ly/2vsK9xS                                                       |                    | 2.49           | 2.49      |
+| 1                     | Keypad                | http://bit.ly/2wrNNMV                                                       |                    | 1.60           | 1.60      |
 |                       |                       |                                                                             |                    |                |           |
 | 1                     | Arduino Nano          | https://www.sunfounder.com/board/arduino/nano.html                          |                    | 13.94          | 13.94     |
 |                       |                       |                                                                             |                    |                |           |
