@@ -1,8 +1,8 @@
 # Helios Makerspace - PCU: Power Control Unit
 
 ## Short Description
-Device that request a keycode from the user in order to power-up a tool in a Makerspace
-![Helios PCU](https://github.com/lle/HeliosPowerControlUnit/blob/master/img/2018V2_front.jpg?raw=true)
+Device that request a keycode from the user in order to power-up a tool in a Makerspace  
+![Helios PCU](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_front.jpg)
 
 ## Demonstration
 https://www.youtube.com/watch?v=vD_NKFLX1eg
@@ -22,17 +22,17 @@ At the beginning of 2018, a version #2 has been produced. It has 4 minor but imp
 
 ![Version 2](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_inner.jpg)
 
-### Close up of LCD I2C Connector
+#### Close up of LCD I2C Connector
 The LCD I2C module has 4 pins (SDA, SCL, GND, +5V). So it has been labelled "D, C, -, +"
 The connector labelle "1  7" is for the keypad. The connector has been labelled to avoid placing the cable reversed.
 ![Header](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_header.jpg)
-![LCD](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_lcd.jpg)
+![LCD](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_lcd.jpg)a
 
-### Close up of NEMA15 socket
+#### Close up of NEMA15 socket
 A custom 3D printing part has been produced to allow the installation of the panel-mount socket. The model is available for download in the "mechanical" folder
 ![Socket](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_socket.jpg)
 
-### Close up of the wrapped crimpped cable
+#### Close up of the wrapped crimpped cable
 The cables are first crimpped and then heat-shrink are used to isolate the exposed metal part of the quick-connect.
 ![Crimpped](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_input.jpg)
 
