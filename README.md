@@ -2,7 +2,7 @@
 
 ## Short Description
 Device that request a keycode from the user in order to power-up a tool in a Makerspace
-![Helios PCU](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/heliosPCU.png)
+![Helios PCU](https://github.com/lle/HeliosPowerControlUnit/blob/master/img/2018V2_front.jpg?raw=true)
 
 ## Demonstration
 https://www.youtube.com/watch?v=vD_NKFLX1eg
@@ -12,6 +12,29 @@ At Helios Makerspace, there is a number of dangerous tools (ei: CNC, table saws,
 
 ## Creating the PCU
 The power control unit locks the power from a tool until the correct password has been inputted. Furthermore, the administrator can set timeouts amount between 15 minutes and 2 hours. When the timeout has been reached, the PCU will produce several waves of warning beep at 60, 30 and 10 seconds, before shutting down.
+
+## About Version 2 (2018 Model)
+At the beginning of 2018, a version #2 has been produced. It has 4 minor but important upgrade
+* LCD screen is on the I2C line of the Arduino
+* 2 different passwords: user password + admin password
+* wiring have been crimped and shrink-wrapped
+* a NEMA15 female socket has been added
+
+![Version 2](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_inner.jpg)
+
+### Close up of LCD I2C Connector
+The LCD I2C module has 4 pins (SDA, SCL, GND, +5V). So it has been labelled "D, C, -, +"
+The connector labelle "1  7" is for the keypad. The connector has been labelled to avoid placing the cable reversed.
+![Header](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_header.jpg)
+![LCD](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_lcd.jpg)
+
+### Close up of NEMA15 socket
+A custom 3D printing part has been produced to allow the installation of the panel-mount socket. The model is available for download in the "mechanical" folder
+![Socket](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_socket.jpg)
+
+### Close up of the wrapped crimpped cable
+The cables are first crimpped and then heat-shrink are used to isolate the exposed metal part of the quick-connect.
+![Crimpped](https://raw.githubusercontent.com/lle/HeliosPowerControlUnit/master/img/2018V2_input.jpg)
 
 ## Limitations
 The current board design only support devices lower than 10 amps at constant current due to the PCB trace width.
@@ -32,7 +55,7 @@ To fix this problem on the first manufactured PCB, we can bypass the relay into 
 ## BOM
 | Digikey               |                       |                                                                             |                    |                |           |
 |-----------------------|-----------------------|-----------------------------------------------------------------------------|--------------------|----------------|-----------|
-| Quantity              | Part Number           | Description                                                                 | Customer Reference | Unit Price CAD | Sub Total |
+| Quantity              | Part Number           | Description                                                                 | Comment           | Unit Price CAD | Sub Total |
 | 1                     | Z2616-ND              | RELAY GEN PURPOSE SPDT 16A 5V                                               |                    | 3.06           | 3.06      |
 | 10                    | 311-3454-1-ND         | CAP CER 1UF 25V X7R 1206                                                    |                    | 0.137          | 1.37      |
 | 1                     | NTD3055L104T4GOSCT-ND | MOSFET N-CH 60V 12A DPAK                                                    |                    | 0.95           | 0.95      |
@@ -53,6 +76,8 @@ To fix this problem on the first manufactured PCB, we can bypass the relay into 
 | 1                     | 102-2589-ND           | POWER SUPPLY SWITCHING 5V 2W                                                |                    | 17.78          | 17.78     |
 | 1                     | 495-6464-ND           | VARISTOR DISC 14MM                                                          |                    | 0.74           | 0.74      |
 | 1                     | 3314J-2-103ECT-ND     | TRIMMER 10K OHM 0.25W SMD                                                   |                    | 3.12           | 3.12      |
+| 1                     | Q212-ND               | PWR ENT RCPT IEC320-C14                                                     |                    | 1.13           | 1.13      |
+| 1                     | Q337-ND               | PWR ENT RCPT NEMA5-15 PANEL                                                 |                    | 1.13           | 1.13      |
 |                       |                       |                                                                             |                    |                |           |
 | Other Stores          |                       |                                                                             |                    |                |           |
 | Quantity              | Description           | URL                                                                         | Customer Reference | Unit Price CAD | Sub Total |
@@ -66,4 +91,3 @@ To fix this problem on the first manufactured PCB, we can bypass the relay into 
 |                       |                       |                                                                             |                    |                |           |
 | 1                     | Arduino Nano          | https://www.sunfounder.com/board/arduino/nano.html                          |                    | 13.94          | 13.94     |
 |                       |                       |                                                                             |                    |                |           |
-|                       |                       |                                                                             |                    | Total          | 69.12     |
